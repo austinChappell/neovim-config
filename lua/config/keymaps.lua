@@ -4,3 +4,5 @@
 vim.keymap.set("n", "yp", function()
   vim.fn.setreg("+", vim.fn.expand("%"))
 end, { desc = "Yank relative path" })
+
+vim.keymap.set("n", "\\", "<leader>e", { desc = "Toggle file explorer", remap = true })
